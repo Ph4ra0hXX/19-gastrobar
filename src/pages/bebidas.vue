@@ -393,9 +393,9 @@ export default {
 
 #textDividers {
   color: #ff4f01;
-  font-family: "Harrison-Rough";
+  font-family: "Barlow-Black";
   text-transform: uppercase;
-  font-size: 40px;
+  font-size: 25px;
   font-weight: lighter;
 }
 

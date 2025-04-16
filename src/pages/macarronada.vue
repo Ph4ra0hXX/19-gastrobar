@@ -194,8 +194,8 @@ export default {
 
 #textDividers {
   color: #ff4f01;
-  font-family: "Harrison-Rough";
-  font-size: 40px;
+  font-family: "Barlow-Black";
+  font-size: 25px;
   font-weight: lighter;
   text-transform: uppercase;
 }
