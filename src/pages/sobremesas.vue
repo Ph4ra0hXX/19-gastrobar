@@ -13,38 +13,22 @@ export default {
     const Burger = ref({
       Pao: [
         {
-          nome: "Burguer Misto",
-          preco: 12.0,
+          nome: "Petit Gateau de Chocolate",
+          preco: 20.0,
           quantidade: 0,
-          descricao:
-            "Pão bola selado na manteiga, alface, tomate, hambúrguer tradicional, presunto, muçarela.",
+          descricao: "",
         },
         {
-          nome: "Burguer Carne Especial",
-          preco: 19.0,
+          nome: "Sorvete de Queijo Com Goiabada",
+          preco: 24.0,
           quantidade: 0,
-          descricao:
-            "Pão brioche selado na manteiga, alface, tomate, hambúrguer caseiro, muçarela, bacon e ovo.",
+          descricao: "",
         },
         {
-          nome: "Burguer Frango Especial",
-          preco: 14.5,
+          nome: "Cocada de Forno Com Sorvete D e Creme",
+          preco: 21.0,
           quantidade: 0,
-          descricao:
-            "Pão árabe selado na manteiga, alface, tomate, filé de frango trinchado, bacon e ovo.",
-        },
-        {
-          nome: "Burguer Fitness",
-          preco: 11.0,
-          quantidade: 0,
-          descricao: "Pão integral, alface, tomate, filé de frango trinchado.",
-        },
-        {
-          nome: "Burguer Fitness / Ovo",
-          preco: 13.0,
-          quantidade: 0,
-          descricao:
-            "Pão integral, alface, tomate, ovo e filé de frango trinchado.",
+          descricao: "",
         },
       ],
     });
@@ -85,7 +69,7 @@ export default {
     <div id="listar">
       <div class="dotted-line">
         <hr />
-        <span id="textDividers">BURGUERES JÁ MONTADOS</span>
+        <span id="textDividers">COMBOS</span>
         <hr />
       </div>
       <div v-for="(item, index) in Burger.Pao" :key="item">

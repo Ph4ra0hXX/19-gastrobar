@@ -65,7 +65,7 @@ export const produtosStore = defineStore("produto", {
   state: () => {
     return {
       cardDataStore: [
-         /* {
+        /* {
           id: 9,
           nome: "ASSUSTADORAMENTE",
           img: "food9.webp",
@@ -113,7 +113,7 @@ export const produtosStore = defineStore("produto", {
             "domingo",
           ],
         },
-       /* {
+        /* {
           id: 2,
           nome: "PRATOS ESPECIAIS",
           img: "food12.webp",
@@ -187,7 +187,7 @@ export const produtosStore2 = defineStore("produto2", {
   state: () => {
     return {
       cardDataStore: [
-       /*  {
+        /*  {
           id: 9,
           nome: "ASSUSTADORAMENTE",
           img: "food9.webp",
@@ -235,7 +235,7 @@ export const produtosStore2 = defineStore("produto2", {
             "domingo",
           ],
         },
-       /* {
+        /* {
           id: 2,
           nome: "PRATOS ESPECIAIS",
           img: "food12.webp",

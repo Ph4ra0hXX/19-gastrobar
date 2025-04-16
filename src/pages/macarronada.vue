@@ -13,74 +13,92 @@ export default {
     const Burger = ref({
       Pao: [
         {
-          nome: "Cuscuz Misturadão",
-          preco: 10.0,
+          nome: "Isca de Frango Empanado",
+          preco: 27.0,
+          quantidade: 0,
+          descricao: "Isca de frango empanado servida com molho.",
+        },
+        {
+          nome: "Mini Pastéis de Carne Com Molho Rosé",
+          preco: 24.0,
+          quantidade: 0,
+          descricao: "Mini pastéis de carne acompanhados de molho rosé.",
+        },
+        {
+          nome: "Mini Pastéis de Queijo Com Geléia de Pimenta",
+          preco: 22.0,
           quantidade: 0,
           descricao:
-            "Acompanha: Carne de sol desfiada, bacon, calabresa, tomate, cebola e cheiro verde.",
-        },
-
-        {
-          nome: "Vatapá",
-          preco: 10.0,
-          quantidade: 0,
-          descricao: "Acompanha: Arroz e paçoca.",
+            "Mini pastéis de queijo acompanhados de geléia de pimenta.",
         },
         {
-          nome: "Creme de Galinha.",
-          preco: 10.0,
-          quantidade: 0,
-          descricao: "Acompanha: Arroz.",
-        },
-        {
-          nome: "Lasanha de Carne.",
+          nome: "Batata Frita Servida Com Molho Rosé",
           preco: 15.0,
           quantidade: 0,
-          descricao: "Acompanha: Arroz e batata palha.",
-        },
-        /* {
-          nome: "Escondidinho de Carne de Sol.",
-          preco: 15.0,
-          quantidade: 0,
-          descricao: "Acompanha: Arroz e batata palha.",
-        },*/
-        {
-          nome: "Fricassê de Frango.",
-          preco: 15.0,
-          quantidade: 0,
-          descricao: "Acompanha: Arroz e batata palha.",
+          descricao: "Batata frita servida com molho rosé.",
         },
         {
-          nome: "Sopa de Feijão 500ml.",
-          preco: 8.0,
+          nome: "Dadinho de Queijo Empanado",
+          preco: 20.0,
           quantidade: 0,
-          descricao: "-",
+          descricao: "Dadinho de queijo empanado.",
         },
         {
-          nome: "Baião com Trinchado de Boi",
-          preco: 0.0,
+          nome: "Batata Frita Especial",
+          preco: 22.0,
           quantidade: 0,
-          descricao: "-",
+          descricao: "Batata frita com bacon, cheddar e queijo.",
         },
         {
-          nome: "Baião com Trinchado de Frango",
-          preco: 0.0,
+          nome: "Linguiça Artesanal Cuiabana Suína",
+          preco: 27.0,
           quantidade: 0,
-          descricao: "-",
+          descricao: "Linguiça artesanal cuiabana suína.",
         },
-      ],
-      Adicionais: [
-        { nome: "Filé de Frango Trinchado", preco: 5.0, quantidade: 0 },
-        { nome: "Calabresa", preco: 3.0, quantidade: 0 },
-        { nome: "Boi Trinchado", preco: 8.0, quantidade: 0 },
-        { nome: "Presunto Peru", preco: 2.5, quantidade: 0 },
-        { nome: "Carne de Sol Desfiada", preco: 5.0, quantidade: 0 },
-        { nome: "Batata Palha", preco: 1.5, quantidade: 0 },
-        { nome: "Queijo Mussarela", preco: 2.5, quantidade: 0 },
-        { nome: "Milho Verde", preco: 1.0, quantidade: 0 },
-        { nome: "Queijo Cheddar", preco: 3.0, quantidade: 0 },
-        { nome: "Queijo Coalho", preco: 2.0, quantidade: 0 },
-        { nome: "Bacon", preco: 3.0, quantidade: 0 },
+        {
+          nome: "Linguiça Artesanal Picante",
+          preco: 27.0,
+          quantidade: 0,
+          descricao: "Linguiça artesanal picante.",
+        },
+        {
+          nome: "Linguiça Artesanal Sertaneja",
+          preco: 27.0,
+          quantidade: 0,
+          descricao: "Linguiça artesanal sertaneja.",
+        },
+        {
+          nome: "Feijão Verde Cremoso",
+          preco: 24.9,
+          quantidade: 0,
+          descricao: "Feijão verde cremoso.",
+        },
+        {
+          nome: "Pão de Alho",
+          preco: 7.0,
+          quantidade: 0,
+          descricao: "Pão de alho.",
+        },
+        {
+          nome: "Isca de Tilápia Empanada",
+          preco: 32.0,
+          quantidade: 0,
+          descricao: "Isca de tilápia empanada acompanhada de molho 3 queijos.",
+        },
+        {
+          nome: "Salada Caesar",
+          preco: 28.0,
+          quantidade: 0,
+          descricao:
+            "Mix de folhas, cenoura ralada, croutons, manga, queijo parmesão, filé de frango, molho, mel, mostarda e gergelim.",
+        },
+        {
+          nome: "Salada de Filé",
+          preco: 30.0,
+          quantidade: 0,
+          descricao:
+            "Mix de folhas, cenoura ralada, croutons, manga, queijo parmesão, filé, molho, mel, mostarda e gergelim.",
+        },
       ],
     });
 
@@ -103,15 +121,7 @@ export default {
       router.push("/");
     }
 
-    function updateQuantities(selectedItem) {
-      this.Burger.Pao.forEach((item) => {
-        if (item === selectedItem) {
-          item.quantidade = 1;
-        } else {
-          item.quantidade = 0;
-        }
-      });
-    }
+    function updateQuantities(selectedItem) {}
 
     return {
       Burger,
@@ -128,7 +138,7 @@ export default {
     <div id="listar">
       <div class="dotted-line">
         <hr />
-        <span id="textDividers">PRATOS ESPECIAIS</span>
+        <span id="textDividers">COMBOS</span>
         <hr />
       </div>
       <div v-for="(item, index) in Burger.Pao" :key="item">
@@ -155,31 +165,7 @@ export default {
         <p id="itens">{{ item.descricao }}</p>
         <br />
       </div>
-      <!--     <div class="dotted-line">
-        <hr />
-        <span id="textDividers">Adicionais</span>
-        <hr />
-      </div>
-      <div v-for="(item, index) in Burger.Adicionais" :key="item">
-        <button class="botao1" @click="item.quantidade++">+</button>
 
-        <button
-          v-if="item.quantidade > 0"
-          class="botao2"
-          @click="item.quantidade--"
-        >
-          -
-        </button>
-
-        <label style="pointer-events: none" id="nomeItem" for="adicional"
-          ><span id="quantidadeDiv">{{ item.quantidade }}x</span>
-          {{ item.nome }}</label
-        >
-        <label id="preco">R$: {{ item.preco.toFixed(2) }}</label>
-        <p id="itens"></p>
-        <br />
-      </div>
--->
       <!---------------------------->
 
       <button @click="salvarPedido" id="butOpcoes" type="submit" value="Submit">

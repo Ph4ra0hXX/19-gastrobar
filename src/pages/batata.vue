@@ -13,66 +13,29 @@ export default {
     const Burger = ref({
       Pao: [
         {
-          nome: "Filé de Frango Trinchado",
-          preco: 23.0,
-          quantidade: 0,
-          descricao: "Acompanha: batata frita e arroz.",
-        },
-        {
-          nome: "Boi Trinchado",
-          preco: 29.0,
-          quantidade: 0,
-          descricao: "Acompanha: batata frita e arroz.",
-        },
-        {
-          nome: "Batata Frita",
-          preco: 14.0,
-          quantidade: 0,
-          descricao: "-",
-        },
-        {
-          nome: "Batata Frita Especial",
-          preco: 18.0,
-          quantidade: 0,
-          descricao: "(Cheddar e Bacon)",
-        },
-        {
-          nome: "Calabresa com Fritas",
-          preco: 22.0,
-          quantidade: 0,
-          descricao: "-",
-        },
-        {
           nome: "Arroz Branco",
-          preco: 8.0,
-          quantidade: 0,
-          descricao: "-",
-        },
-        {
-          nome: "Boi Trinchado Acebolado - 100g",
-          preco: 13.0,
-          quantidade: 0,
-          descricao: "(Pedido mínimo: 200g)",
-        },
-        {
-          nome: "Frango Trinchado Acebolado - 100g",
           preco: 9.0,
           quantidade: 0,
-          descricao: "(Pedido mínimo: 200g)",
+          descricao: "Arroz branco.",
         },
-      ],
-      Adicionais: [
-        { nome: "Filé de Frango Trinchado", preco: 5.0, quantidade: 0 },
-        { nome: "Calabresa", preco: 3.0, quantidade: 0 },
-        { nome: "Boi Trinchado", preco: 8.0, quantidade: 0 },
-        { nome: "Presunto Peru", preco: 2.5, quantidade: 0 },
-        { nome: "Carne de Sol Desfiada", preco: 5.0, quantidade: 0 },
-        { nome: "Batata Palha", preco: 1.5, quantidade: 0 },
-        { nome: "Queijo Mussarela", preco: 2.5, quantidade: 0 },
-        { nome: "Milho Verde", preco: 1.0, quantidade: 0 },
-        { nome: "Queijo Cheddar", preco: 3.0, quantidade: 0 },
-        { nome: "Queijo Coalho", preco: 2.0, quantidade: 0 },
-        { nome: "Bacon", preco: 3.0, quantidade: 0 },
+        {
+          nome: "Arroz de Leite",
+          preco: 13.0,
+          quantidade: 0,
+          descricao: "Arroz de leite.",
+        },
+        {
+          nome: "Arroz Birobiro",
+          preco: 15.0,
+          quantidade: 0,
+          descricao: "Arroz biro-biro.",
+        },
+        {
+          nome: "Arroz à Piamontese",
+          preco: 20.0,
+          quantidade: 0,
+          descricao: "Arroz à Piamontese",
+        },
       ],
     });
 
@@ -95,9 +58,12 @@ export default {
       router.push("/");
     }
 
+    function updateQuantities(selectedItem) {}
+
     return {
       Burger,
       salvarPedido,
+      updateQuantities,
       voltar,
     };
   },
@@ -109,11 +75,16 @@ export default {
     <div id="listar">
       <div class="dotted-line">
         <hr />
-        <span id="textDividers">PORÇÕES</span>
+        <span id="textDividers">COMBOS</span>
         <hr />
       </div>
       <div v-for="(item, index) in Burger.Pao" :key="item">
-        <button class="botao1" @click="item.quantidade++">+</button>
+        <button
+          class="botao1"
+          @click="item.quantidade++, updateQuantities(item)"
+        >
+          +
+        </button>
 
         <button
           v-if="item.quantidade > 0"
@@ -131,31 +102,7 @@ export default {
         <p id="itens">{{ item.descricao }}</p>
         <br />
       </div>
-      <!--     <div class="dotted-line">
-        <hr />
-        <span id="textDividers">Adicionais</span>
-        <hr />
-      </div>
-      <div v-for="(item, index) in Burger.Adicionais" :key="item">
-        <button class="botao1" @click="item.quantidade++">+</button>
 
-        <button
-          v-if="item.quantidade > 0"
-          class="botao2"
-          @click="item.quantidade--"
-        >
-          -
-        </button>
-
-        <label style="pointer-events: none" id="nomeItem" for="adicional"
-          ><span id="quantidadeDiv">{{ item.quantidade }}x</span>
-          {{ item.nome }}</label
-        >
-        <label id="preco">R$: {{ item.preco.toFixed(2) }}</label>
-        <p id="itens"></p>
-        <br />
-      </div>
--->
       <!---------------------------->
 
       <button @click="salvarPedido" id="butOpcoes" type="submit" value="Submit">
