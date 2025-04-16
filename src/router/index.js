@@ -17,29 +17,24 @@ const routes = [
     component: Home,
   },
   {
-    path: "/burger",
+    path: "/entradas",
     name: "Burger",
     component: Burger,
   },
   {
-    path: "/combo",
+    path: "/carte",
     name: "Combo",
     component: Combo,
   },
   {
-    path: "/macarronada",
+    path: "/espetinhos",
     name: "macarronada",
-    component: Macarronada,
+    component: Sopas,
   },
   {
-    path: "/batata",
+    path: "/guarnicoes",
     name: "batata",
     component: Batata,
-  },
-  {
-    path: "/sopas",
-    name: "sopa",
-    component: Sopas,
   },
   {
     path: "/sobremesas",

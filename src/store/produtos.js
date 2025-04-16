@@ -190,9 +190,9 @@ export const produtosStore2 = defineStore("produto2", {
         {
           id: 1,
           nome: "ENTRADAS",
-          img: "food1.webp",
+          img: "food3.webp",
           descricao: "✗✗✗✗✗✗✗✗✗✗",
-          url: "/burger",
+          url: "/entradas",
           diasSemana: [
             "segunda-feira",
             "terça-feira",
@@ -206,9 +206,9 @@ export const produtosStore2 = defineStore("produto2", {
         {
           id: 8,
           nome: "À LA CARTE",
-          img: "food6.webp",
+          img: "food2.webp",
           descricao: "✗✗✗✗✗✗✗✗✗✗",
-          url: "/combo",
+          url: "/carte",
           diasSemana: [
             "segunda-feira",
             "terça-feira",
@@ -238,9 +238,9 @@ export const produtosStore2 = defineStore("produto2", {
         {
           id: 9,
           nome: "ESPETINHOS",
-          img: "food9.webp",
+          img: "food16.webp",
           descricao: "✗✗✗✗✗✗✗✗✗✗",
-          url: "/sopas",
+          url: "/espetinhos",
           diasSemana: [
             "segunda-feira",
             "terça-feira",
@@ -254,9 +254,9 @@ export const produtosStore2 = defineStore("produto2", {
         {
           id: 6,
           nome: "GUARNIÇÕES",
-          img: "food3.webp",
+          img: "food15.webp",
           descricao: "✗✗✗✗✗✗✗✗✗✗",
-          url: "/batata",
+          url: "/guarnicoes",
           diasSemana: [
             "segunda-feira",
             "terça-feira",
@@ -270,7 +270,7 @@ export const produtosStore2 = defineStore("produto2", {
         {
           id: 7,
           nome: "SOBREMESAS",
-          img: "food11.webp",
+          img: "food5.webp",
           descricao: "✗✗✗✗✗✗✗✗✗✗",
           url: "/sobremesas",
           diasSemana: [
