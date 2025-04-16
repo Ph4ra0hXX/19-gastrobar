@@ -13,91 +13,46 @@ export default {
     const Burger = ref({
       Pao: [
         {
-          nome: "Isca de Frango Empanado",
-          preco: 27.0,
-          quantidade: 0,
-          descricao: "Isca de frango empanado servida com molho.",
-        },
-        {
-          nome: "Mini Pastéis de Carne Com Molho Rosé",
-          preco: 24.0,
-          quantidade: 0,
-          descricao: "Mini pastéis de carne acompanhados de molho rosé.",
-        },
-        {
-          nome: "Mini Pastéis de Queijo Com Geléia de Pimenta",
-          preco: 22.0,
-          quantidade: 0,
-          descricao:
-            "Mini pastéis de queijo acompanhados de geléia de pimenta.",
-        },
-        {
-          nome: "Batata Frita Servida Com Molho Rosé",
-          preco: 15.0,
-          quantidade: 0,
-          descricao: "Batata frita servida com molho rosé.",
-        },
-        {
-          nome: "Dadinho de Queijo Empanado",
-          preco: 20.0,
-          quantidade: 0,
-          descricao: "Dadinho de queijo empanado.",
-        },
-        {
-          nome: "Batata Frita Especial",
-          preco: 22.0,
-          quantidade: 0,
-          descricao: "Batata frita com bacon, cheddar e queijo.",
-        },
-        {
-          nome: "Linguiça Artesanal Cuiabana Suína",
-          preco: 27.0,
-          quantidade: 0,
-          descricao: "Linguiça artesanal cuiabana suína.",
-        },
-        {
-          nome: "Linguiça Artesanal Picante",
-          preco: 27.0,
-          quantidade: 0,
-          descricao: "Linguiça artesanal picante.",
-        },
-        {
-          nome: "Linguiça Artesanal Sertaneja",
-          preco: 27.0,
-          quantidade: 0,
-          descricao: "Linguiça artesanal sertaneja.",
-        },
-        {
-          nome: "Feijão Verde Cremoso",
-          preco: 24.9,
-          quantidade: 0,
-          descricao: "Feijão verde cremoso.",
-        },
-        {
-          nome: "Pão de Alho",
+          nome: "Espetinho de Frango",
           preco: 7.0,
+          descricao: "",
           quantidade: 0,
-          descricao: "Pão de alho.",
         },
         {
-          nome: "Isca de Tilápia Empanada",
-          preco: 32.0,
+          nome: "Espetinho de Boi",
+          preco: 7.0,
+          descricao: "",
           quantidade: 0,
-          descricao: "Isca de tilápia empanada acompanhada de molho 3 queijos.",
         },
         {
-          nome: "Salada Caesar",
-          preco: 28.0,
+          nome: "Espetinho de Porco",
+          preco: 7.0,
+          descricao: "",
           quantidade: 0,
-          descricao:
-            "Mix de folhas, cenoura ralada, croutons, manga, queijo parmesão, filé de frango, molho, mel, mostarda e gergelim.",
         },
         {
-          nome: "Salada de Filé",
-          preco: 30.0,
+          nome: "Espetinho de Frango Com Bacon",
+          preco: 8.5,
+          descricao: "",
           quantidade: 0,
-          descricao:
-            "Mix de folhas, cenoura ralada, croutons, manga, queijo parmesão, filé, molho, mel, mostarda e gergelim.",
+        },
+        {
+          nome: "Espetinho de Queijo Com Goiabada",
+          preco: 8.5,
+          descricao: "",
+          quantidade: 0,
+        },
+        {
+          nome: "Espetinho de Queijo Com Melaço de Cana",
+          preco: 8.5,
+          descricao: "",
+          quantidade: 0,
+        },
+        {
+          nome: "Espetinho de Queijo",
+          preco: 7.0,
+          descricao: "",
+          quantidade: 0,
         },
       ],
     });

@@ -25,7 +25,7 @@ export default {
           descricao: "",
         },
         {
-          nome: "Cocada de Forno Com Sorvete D e Creme",
+          nome: "Cocada de Forno Com Sorvete De Creme",
           preco: 21.0,
           quantidade: 0,
           descricao: "",

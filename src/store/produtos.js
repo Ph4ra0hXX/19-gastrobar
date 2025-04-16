@@ -65,22 +65,6 @@ export const produtosStore = defineStore("produto", {
   state: () => {
     return {
       cardDataStore: [
-        /* {
-          id: 9,
-          nome: "ASSUSTADORAMENTE",
-          img: "food9.webp",
-          descricao: "Delicioso",
-          url: "/sopas",
-          diasSemana: [
-            "segunda-feira",
-            "terça-feira",
-            "quarta-feira",
-            "quinta-feira",
-            "sexta-feira",
-            "sábado",
-            "domingo",
-          ],
-        },*/
         {
           id: 1,
           nome: "BURGUER",
@@ -129,6 +113,22 @@ export const produtosStore = defineStore("produto", {
             "domingo",
           ],
         },*/
+        {
+          id: 9,
+          nome: "ASSUSTADORAMENTE",
+          img: "food9.webp",
+          descricao: "Delicioso",
+          url: "/sopas",
+          diasSemana: [
+            "segunda-feira",
+            "terça-feira",
+            "quarta-feira",
+            "quinta-feira",
+            "sexta-feira",
+            "sábado",
+            "domingo",
+          ],
+        },
         {
           id: 6,
           nome: "PORÇÕES",
@@ -187,22 +187,6 @@ export const produtosStore2 = defineStore("produto2", {
   state: () => {
     return {
       cardDataStore: [
-        /*  {
-          id: 9,
-          nome: "ASSUSTADORAMENTE",
-          img: "food9.webp",
-          descricao: "Delicioso",
-          url: "/sopas",
-          diasSemana: [
-            "segunda-feira",
-            "terça-feira",
-            "quarta-feira",
-            "quinta-feira",
-            "sexta-feira",
-            "sábado",
-            "domingo",
-          ],
-        },*/
         {
           id: 1,
           nome: "BURGUER",
@@ -251,6 +235,22 @@ export const produtosStore2 = defineStore("produto2", {
             "domingo",
           ],
         },*/
+        {
+          id: 9,
+          nome: "ASSUSTADORAMENTE",
+          img: "food9.webp",
+          descricao: "Delicioso",
+          url: "/sopas",
+          diasSemana: [
+            "segunda-feira",
+            "terça-feira",
+            "quarta-feira",
+            "quinta-feira",
+            "sexta-feira",
+            "sábado",
+            "domingo",
+          ],
+        },
         {
           id: 6,
           nome: "PORÇÕES",

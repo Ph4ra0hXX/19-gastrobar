@@ -38,6 +38,12 @@ export default {
           descricao: "Batata frita servida com molho rosé.",
         },
         {
+          nome: "Croquete de costela",
+          preco: 32.0,
+          quantidade: 0,
+          descricao: "Croquete de costela",
+        },
+        {
           nome: "Dadinho de Queijo Empanado",
           preco: 20.0,
           quantidade: 0,
