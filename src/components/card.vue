@@ -96,6 +96,7 @@ p {
   font-family: Barlow-Black;
   font-weight: 800;
   color: #ffffff;
+  letter-spacing: 2px;
 }
 
 .card__info p {

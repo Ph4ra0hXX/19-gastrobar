@@ -245,7 +245,7 @@ export default {
     <div id="listar">
       <div class="dotted-line">
         <hr />
-        <span id="textDividers">COMBOS</span>
+        <span id="textDividers">À LA CARTE</span>
         <hr />
       </div>
       <div v-for="(item, index) in Burger.Pao" :key="item">

@@ -17,33 +17,46 @@ export default {
     const apesoEscolhido = ref(0);
 
     const taxaLocalidade = ref([
-      { nome: "Boa Fé", preco: "3.00" },
-      { nome: "Luiz Alves", preco: "3.00" },
-      { nome: "Bom Nome", preco: "4.00" },
-      { nome: "Pitombeira", preco: "5.00" },
-      { nome: "Brotolândia", preco: "4.00" },
-      { nome: "São Raimundo", preco: "5.00" },
-      { nome: "Estrada das Flores", preco: "4.00" },
+      { nome: "João xxiii", preco: "4.00" },
       { nome: "Centro", preco: "4.00" },
-      { nome: "Sítio Ilha", preco: "4.00" },
-      { nome: "João 23", preco: "4.00" },
-      { nome: "Limoeirinho", preco: "4.00" },
+      { nome: "Brotolandia", preco: "4.00" },
+      { nome: "Monsenhor Otávio", preco: "4.00" },
+      { nome: "José Simões", preco: "4.00" },
       { nome: "Populares", preco: "4.00" },
-      { nome: "Eucaliptos", preco: "5.00" },
+      { nome: "Eucaliptos", preco: "4.00" },
+      { nome: "Bom nome", preco: "4.00" },
+      { nome: "Pitombeira", preco: "4.00" },
+      { nome: "Limoerinho", preco: "4.00" },
+      { nome: "Socorro", preco: "4.00" },
       { nome: "Santa Luzia", preco: "4.00" },
-      { nome: "Sítio Socorro", preco: "6.00" },
-      { nome: "Sítio Milagres", preco: "8.00" },
-      { nome: "Conviver", preco: "8.00" },
-      { nome: "Cidade Alta", preco: "8.00" },
-      { nome: "Bom Fim", preco: "8.00" },
+      { nome: "Boa fé", preco: "4.00" },
+      { nome: "Luiz Alves", preco: "4.00" },
+      { nome: "Estrada de flores", preco: "5.00" },
+      { nome: "Ilha", preco: "4.00" },
+      { nome: "Canafístula", preco: "7.00" },
+      { nome: "São Raimundo", preco: "7.00" },
       { nome: "Arraial", preco: "7.00" },
-      { nome: "Várzea do Cobra", preco: "8.00" },
-      { nome: "Hospital Regional", preco: "20.00" },
+      { nome: "Pedra branca", preco: "7.00" },
+      { nome: "Sítio pasto", preco: "7.00" },
+      { nome: "Sítio Marquinhos", preco: "7.00" },
+      { nome: "Várzea do cobra", preco: "7.00" },
+      { nome: "Genipapeiro", preco: "8.00" },
+      { nome: "Bom fim", preco: "7.00" },
+      { nome: "Morros", preco: "7.00" },
+      { nome: "Quixaba", preco: "7.00" },
+      { nome: "Conviver", preco: "7.00" },
+      { nome: "Correco de Areia", preco: "7.00" },
+      { nome: "Sítio milagre", preco: "7.00" },
+      { nome: "Cidade alta", preco: "7.00" },
+      { nome: "Triângulo", preco: "8.00" },
+      { nome: "Regional", preco: "25.00" },
+      { nome: "Bom jesus", preco: "7.00" },
+      { nome: "Bom jesus do cruzeiro", preco: "8.00" },
     ]);
 
     function copyToClipboard() {
       navigator.clipboard
-        .writeText("57246184000191")
+        .writeText("88999704015")
         .then(() => {
           toast.success("Pix copiado!", {
             timeout: 2000,
@@ -508,7 +521,7 @@ export default {
           class="input-field"
         >
           <button id="butCopiarPix" @click="copyToClipboard">Copiar PIX</button>
-          <p id="beneficiario">Beneficiário: José Rudney</p>
+          <p id="beneficiario">Beneficiário: Mayara Vieira</p>
         </div>
         <div
           v-if="carrinho.dadosPessoais.formaDePagamento == 'Dinheiro'"
@@ -552,7 +565,7 @@ export default {
 }
 
 #butCopiarPix {
-  background-color: #aff63c;
+  background-color: #000000;
   height: 40px;
   border: 0;
   color: #fff;
