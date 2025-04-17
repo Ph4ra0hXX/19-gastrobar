@@ -190,7 +190,7 @@ export const produtosStore2 = defineStore("produto2", {
         {
           id: 1,
           nome: "ENTRADAS",
-          img: "food3.webp",
+          img: "food22.webp",
           descricao: "✗✗✗✗✗✗✗✗✗✗",
           url: "/entradas",
           diasSemana: [
@@ -206,7 +206,7 @@ export const produtosStore2 = defineStore("produto2", {
         {
           id: 8,
           nome: "À LA CARTE",
-          img: "food2.webp",
+          img: "food33.webp",
           descricao: "✗✗✗✗✗✗✗✗✗✗",
           url: "/carte",
           diasSemana: [
@@ -270,7 +270,7 @@ export const produtosStore2 = defineStore("produto2", {
         {
           id: 7,
           nome: "SOBREMESAS",
-          img: "food5.webp",
+          img: "food33.webp",
           descricao: "✗✗✗✗✗✗✗✗✗✗",
           url: "/sobremesas",
           diasSemana: [
