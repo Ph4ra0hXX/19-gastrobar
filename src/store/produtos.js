@@ -68,9 +68,9 @@ export const produtosStore = defineStore("produto", {
         {
           id: 1,
           nome: "ENTRADAS",
-          img: "food1.webp",
-          descricao: "Monte do seu jeito",
-          url: "/burger",
+          img: "food22.webp",
+          descricao: "✗✗✗✗✗✗✗✗✗✗",
+          url: "/entradas",
           diasSemana: [
             "segunda-feira",
             "terça-feira",
@@ -84,9 +84,9 @@ export const produtosStore = defineStore("produto", {
         {
           id: 8,
           nome: "À LA CARTE",
-          img: "food6.webp",
-          descricao: "Completo",
-          url: "/combo",
+          img: "food33.webp",
+          descricao: "✗✗✗✗✗✗✗✗✗✗",
+          url: "/carte",
           diasSemana: [
             "segunda-feira",
             "terça-feira",
@@ -116,9 +116,9 @@ export const produtosStore = defineStore("produto", {
         {
           id: 9,
           nome: "ESPETINHOS",
-          img: "food9.webp",
-          descricao: "Delicioso",
-          url: "/sopas",
+          img: "food16.webp",
+          descricao: "✗✗✗✗✗✗✗✗✗✗",
+          url: "/espetinhos",
           diasSemana: [
             "segunda-feira",
             "terça-feira",
@@ -132,9 +132,9 @@ export const produtosStore = defineStore("produto", {
         {
           id: 6,
           nome: "GUARNIÇÕES",
-          img: "food3.webp",
-          descricao: "Disponível todos os dias",
-          url: "/batata",
+          img: "food15.webp",
+          descricao: "✗✗✗✗✗✗✗✗✗✗",
+          url: "/guarnicoes",
           diasSemana: [
             "segunda-feira",
             "terça-feira",
@@ -148,8 +148,8 @@ export const produtosStore = defineStore("produto", {
         {
           id: 7,
           nome: "SOBREMESAS",
-          img: "food11.webp",
-          descricao: "Escolha seu favorito",
+          img: "food33.webp",
+          descricao: "✗✗✗✗✗✗✗✗✗✗",
           url: "/sobremesas",
           diasSemana: [
             "segunda-feira",
@@ -166,7 +166,7 @@ export const produtosStore = defineStore("produto", {
           id: 4,
           nome: "BEBIDAS",
           img: "food4.webp",
-          descricao: "Refrescantes",
+          descricao: "✗✗✗✗✗✗✗✗✗✗",
           url: "/bebidas",
           diasSemana: [
             "segunda-feira",
