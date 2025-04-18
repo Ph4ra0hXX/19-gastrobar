@@ -171,6 +171,7 @@ label {
 #preco {
   float: right;
   font-size: 17px;
+  margin-top: 10px;
 }
 
 #ingredientes {
